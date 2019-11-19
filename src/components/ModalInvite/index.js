@@ -1,25 +1,30 @@
 import React from 'react'
 import Modal from '../Modal'
 import './index.scss'
-import { ReactComponent as ArrowDown } from '../../assets/ArrowDown.svg'
+import { ReactComponent as Search } from '../../assets/Search.svg'
+import ButtonSelect from '../ButtonSelect'
 
 const ModalInvite = () => (
   <Modal isOpen title="Invite people to project">
-    <div className="ModalInvite">
-      <span className="ModalInvite__link">
+    <form className="ModalSearch">
+      <a href="0#" className="ModalSearch__icon">
+        <Search />
+      </a>
+      <input
+        type="text"
+        className="ModalSearch__input"
+        placeholder="Name or email"
+      />
+      <ButtonSelect />
+      <button>Invite 1 person</button>
+    </form>
+
+    <div className="ModalFooter">
+      <span className="ModalFooter__link">
         Or share this Project with Public link
       </span>
-      <div className="ModalInvite__action">
-        <div className="ButtonSelect">
-          <span className="ButtonSelect__arrow">
-            <ArrowDown />
-          </span>
-          <select size="1">
-            <option>Can edit</option>
-            <option>Can edit</option>
-            <option>Can edit</option>
-          </select>
-        </div>
+      <div className="ModalFooter__action">
+        <ButtonSelect />
         <button>Copy link</button>
       </div>
     </div>

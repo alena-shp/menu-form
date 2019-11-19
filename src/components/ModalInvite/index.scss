@@ -1,4 +1,33 @@
-.ModalInvite {
+.ModalSearch {
+  display: flex;
+  align-items: center;
+  position: relative;
+
+  span {
+    padding: 0 15px;
+  }
+
+  input {
+    background: #ffffff;
+    border-right: 0;
+    border-bottom: 1px solid #dbdbdb;
+    border-top: 1px solid #dbdbdb;
+    border-left: 1px solid #dbdbdb;
+    box-sizing: border-box;
+    border-radius: 3px 0 0 3px;
+    font-size: 13px;
+    font-family: 'Open Sans', sans-serif;
+    height: 45px;
+    width: 300px;
+    padding-left: 40px;
+    outline: none;
+  }
+  a {
+    position: absolute;
+    left: 15px;
+  }
+}
+.Modal__footer {
   align-items: center;
   background: #fafafa;
   border-radius: 0 0 8px 8px;
@@ -6,12 +35,12 @@
   justify-content: space-between;
   padding: 30px 50px 30px 50px;
 
-  &__link {
+  &__footer-link {
     color: #000000;
-    font-family: Open Sans;
+    font-family: 'Open Sans', sans-serif;
     font-size: 13px;
   }
-  &__action {
+  &__footer-action {
     display: flex;
     flex-direction: row;
     height: 45px;
@@ -26,7 +55,7 @@
     border: 0;
     border-radius: 2.81458px;
     color: #ffffff;
-    font-family: Open Sans;
+    font-family: 'Open Sans', sans-serif;
     font-weight: 600;
     font-size: 13px;
     outline: none;
@@ -54,7 +83,7 @@
     border-radius: 3px;
     box-sizing: border-box;
     color: #757575;
-    font-family: Open Sans;
+    font-family: 'Open Sans', sans-serif;
     font-size: 12px;
     height: 45px;
     margin-right: 8px;
