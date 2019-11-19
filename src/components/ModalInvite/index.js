@@ -3,6 +3,7 @@ import Modal from '../Modal'
 import './index.scss'
 import { ReactComponent as Search } from '../../assets/Search.svg'
 import ButtonSelect from '../ButtonSelect'
+import Button from '../Button'
 
 const ModalInvite = () => (
   <Modal isOpen title="Invite people to project">
@@ -16,7 +17,7 @@ const ModalInvite = () => (
         placeholder="Name or email"
       />
       <ButtonSelect />
-      <button>Invite 1 person</button>
+      <Button />
     </form>
 
     <div className="ModalFooter">
