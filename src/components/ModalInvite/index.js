@@ -7,6 +7,7 @@ import Button from '../Button'
 
 const ModalInvite = () => (
   <Modal isOpen title="Invite people to project">
+    
     <form className="ModalSearch">
       <a href="0#" className="ModalSearch__icon">
         <Search />
@@ -29,6 +30,7 @@ const ModalInvite = () => (
         <button>Copy link</button>
       </div>
     </div>
+    
   </Modal>
 )
 

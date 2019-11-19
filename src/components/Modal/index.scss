@@ -21,12 +21,13 @@
     align-items: center;
     display: flex;
     justify-content: space-between;
-    min-height: 100px;
+    height: 100px;
     padding: 38px 50px 32px 48px;
+    width: 670px;
   }
 
   &__body {
-    padding: 0;
+    padding: 50px 50px 30px 50px;
   }
 
   &__title {

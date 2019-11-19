@@ -1,3 +1,9 @@
+.Modal {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  
+}
 .ModalSearch {
   display: flex;
   align-items: center;
@@ -27,13 +33,14 @@
     left: 15px;
   }
 }
-.Modal__footer {
+.ModalFooter {
   align-items: center;
   background: #fafafa;
   border-radius: 0 0 8px 8px;
   display: flex;
   justify-content: space-between;
-  padding: 30px 50px 30px 50px;
+  padding: 0;
+  padding-top: 30px;
 
   &__footer-link {
     color: #000000;
@@ -64,31 +71,3 @@
   }
 }
 
-.ButtonSelect {
-  margin-right: 8px;
-  overflow: hidden;
-  position: relative;
-  width: 100px;
-
-  &__arrow {
-    position: absolute;
-    top: 8px;
-    right: 18px;
-  }
-
-  select {
-    appearance: none;
-    background: transparent;
-    border: 1px solid #dbdbdb;
-    border-radius: 3px;
-    box-sizing: border-box;
-    color: #757575;
-    font-family: 'Open Sans', sans-serif;
-    font-size: 12px;
-    height: 45px;
-    margin-right: 8px;
-    outline: none;
-    padding: 14px 18px 14px 18px;
-    width: 100px;
-  }
-}
