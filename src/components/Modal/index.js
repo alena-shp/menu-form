@@ -2,6 +2,7 @@ import React, { useState } from 'react'
 import PropTypes from 'prop-types'
 import ReactModal from 'react-modal'
 import './index.scss'
+import Close from './../../assets/Close.svg'
 
 const Modal = ({ children, title }) => {
   const [isOpen, showModal] = useState(true)
@@ -20,7 +21,7 @@ const Modal = ({ children, title }) => {
       <header className="Modal__header">
         {title && <h2 className="Modal__title">{title}</h2>}
         <a href="#0" onClick={closeModal}>
-          <img src="" alt="" />
+          <img src={Close} alt="" width="20"/>
         </a>
       </header>
       <div className="Modal__body">{children}</div>
