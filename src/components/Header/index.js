@@ -1,5 +1,5 @@
 import React from 'react'
-import Modal from '../Modal'
+import ModalInvite from '../ModalInvite'
 
 const Header = () => {
   return (
@@ -22,7 +22,7 @@ const Header = () => {
         </li>
       </ul>
 
-      <Modal title="Modal title">*Modal body here*</Modal>
+      <ModalInvite />
     </div>
   )
 }
