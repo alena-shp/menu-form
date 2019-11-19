@@ -1,4 +1,5 @@
 import React from 'react'
+import Modal from '../Modal'
 
 const Header = () => {
   return (
@@ -20,6 +21,8 @@ const Header = () => {
           </a>
         </li>
       </ul>
+
+      <Modal title="Modal title">*Modal body here*</Modal>
     </div>
   )
 }
