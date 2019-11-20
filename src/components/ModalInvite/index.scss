@@ -1,15 +1,24 @@
-.ModalSearch {
+.InvitationSearch {
   display: flex;
   align-items: center;
   position: relative;
   padding: 0 50px 0 50px;
 
-  input {
+  &__search {
+    display: flex;
+    margin-right: 8px;
+    position: relative;
+
+    &--invalid {
+      box-shadow: 0px 0px 3px 1px #ff1a1a;
+      border-right: none;
+    }
+  }
+
+  &__input {
     background: #ffffff;
-    border-right: 0;
-    border-bottom: 1px solid #dbdbdb;
-    border-top: 1px solid #dbdbdb;
-    border-left: 1px solid #dbdbdb;
+    border: 1px solid #dbdbdb;
+    border-right: none;
     box-sizing: border-box;
     border-radius: 3px 0 0 3px;
     font-size: 13px;
@@ -19,9 +28,11 @@
     padding-left: 40px;
     outline: none;
   }
-  a {
+
+  &__icon {
+    left: 15px;
     position: absolute;
-    left: 65px;
+    top: 10px;
   }
 }
 
@@ -45,7 +56,8 @@
     }
   }
 
-  &__block-information {
+  &__user {
+    align-items: center;
     display: flex;
     flex-direction: row;
     justify-content: flex-start;
@@ -91,6 +103,7 @@
 
   &__block-operation-button {
     margin-right: 20px;
+    outline: none;
   }
 }
 ::-webkit-scrollbar {
@@ -119,10 +132,14 @@
     font-family: 'Open Sans', sans-serif;
     font-size: 13px;
   }
+
   &__action {
     display: flex;
     flex-direction: row;
     height: 45px;
+    .ButtonSelect {
+      margin-right: 8px;
+    }
   }
 
   &__action-button {

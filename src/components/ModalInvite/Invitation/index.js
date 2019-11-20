@@ -19,7 +19,7 @@ const Invitation = props => {
         }
       ].map((component, index) => (
         <div className="Invitation__block" key={index}>
-          <div className="Invitation__block-information">
+          <div className="Invitation__user">
             <div className="Invitation__block-photo">
               <img src="https://picsum.photos/30/30" alt="" />
             </div>
