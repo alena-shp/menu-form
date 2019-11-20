@@ -19,7 +19,8 @@ const SearchForm = props => {
           alert(JSON.stringify(value, null, 2))
         }, 300)
       }}
-      render={({ errors, touched }) => (
+    >
+      {({ errors, touched }) => (
         <Form className="InvitationSearch">
           <div
             className={classNames('InvitationSearch__search', {
@@ -46,7 +47,7 @@ const SearchForm = props => {
           </Button>
         </Form>
       )}
-    />
+    </Formik>
   )
 }
 
