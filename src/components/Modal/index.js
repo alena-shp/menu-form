@@ -13,6 +13,7 @@ const Modal = ({ children, title }) => {
 
   return (
     <ReactModal
+      ariaHideApp={false}
       isOpen={isOpen}
       className="Modal"
       overlayClassName="Modal__overlay"
@@ -21,7 +22,7 @@ const Modal = ({ children, title }) => {
       <header className="Modal__header">
         {title && <h2 className="Modal__title">{title}</h2>}
         <a href="#0" onClick={closeModal}>
-          <img src={Close} alt="" width="20"/>
+          <img src={Close} alt="" width="20" />
         </a>
       </header>
       <div className="Modal__body">{children}</div>
