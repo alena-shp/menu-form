@@ -1,11 +1,11 @@
 import React from 'react'
-import { ReactComponent as ArrowDown } from '../../assets/ArrowDown.svg'
+import { ReactComponent as IconArrowDown } from '../../assets/IconArrowDown.svg'
 import './index.scss'
 
 const ButtonSelect = () => (
   <div className="ButtonSelect">
     <span className="ButtonSelect__arrow">
-      <ArrowDown />
+      <IconArrowDown />
     </span>
     <select size="1">
       <option>Can edit</option>

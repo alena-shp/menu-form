@@ -20,6 +20,18 @@ const invitationsStub = [
     email: 'http://lor.em/l296gdk6',
     spent: '',
     actionText: 'Revoke link'
+  },
+  {
+    name: 'Milan Gladis (Owner)',
+    email: 'emma@watson.com',
+    spent: 'Spent 5h 30mins',
+    actionText: 'Revoke Access'
+  },
+  {
+    name: 'Emma Watson (Owner)',
+    email: 'http://lor.em/l296gdk6',
+    spent: '',
+    actionText: 'Transfer ownership'
   }
 ]
 

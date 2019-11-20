@@ -2,8 +2,8 @@ import React from 'react'
 import PropTypes from 'prop-types'
 import ReactModal from 'react-modal'
 import './index.scss'
-import Close from './../../assets/Close.svg'
 
+import { ReactComponent as IconClose } from '../../assets/IconClose.svg'
 const Modal = ({ children, title, isOpen, closeModal }) => {
   return (
     <ReactModal
@@ -16,7 +16,7 @@ const Modal = ({ children, title, isOpen, closeModal }) => {
       <header className="Modal__header">
         {title && <h2 className="Modal__title">{title}</h2>}
         <a href="#0" onClick={closeModal}>
-          <img src={Close} alt="" width="20" />
+          <IconClose />
         </a>
       </header>
       <div className="Modal__body">{children}</div>

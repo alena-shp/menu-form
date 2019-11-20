@@ -3,7 +3,7 @@ import { Formik, Field, Form } from 'formik'
 import classNames from 'classnames'
 import BasicFormSchema from '../../BasicFormSchema'
 import './index.scss'
-import { ReactComponent as Search } from '../../assets/Search.svg'
+import { ReactComponent as IconSearch } from '../../assets/IconSearch.svg'
 import ButtonSelect from '../ButtonSelect'
 import Button from '../Button'
 
@@ -29,7 +29,7 @@ const SearchForm = props => {
             })}
           >
             <span className="InvitationSearch__icon">
-              <Search />
+              <IconSearch />
             </span>
 
             <Field

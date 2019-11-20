@@ -1,13 +1,9 @@
-.Header {
-  &__nav {
-    &--expanded {
-    }
-  }
-}
-
 /* Mobile */
 @media (max-width: 481px) {
   .Header {
+    button {
+      outline: none;
+    }
     .navbar {
       align-items: flex-start;
       flex-direction: column;
