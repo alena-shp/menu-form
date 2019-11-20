@@ -26,6 +26,7 @@
     height: 45px;
     width: 300px;
     padding-left: 40px;
+    position: relative;
     outline: none;
   }
 
@@ -33,5 +34,26 @@
     left: 15px;
     position: absolute;
     top: 10px;
+  }
+
+  .ButtonSelect {
+    position: relative;
+    &:after {
+      content: '';
+      width: 0;
+      height: 24px;
+      position: absolute;
+      border: 1px solid #dbdbdb;
+      top: 10px;
+      left: 0;
+    }
+
+    select {
+      border-top: 1px solid #dbdbdb;
+      border-right: 1px solid #dbdbdb;
+      border-bottom: 1px solid #dbdbdb;
+      border-left: 0;
+      border-radius: 0 3px 3px 0;
+    }
   }
 }

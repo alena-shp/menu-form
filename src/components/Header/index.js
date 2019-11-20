@@ -2,7 +2,7 @@ import React, { useState } from 'react'
 import ModalInvite from '../ModalInvite'
 
 const Header = () => {
-  const [isModalInviteOpen, showModal] = useState(false)
+  const [isModalInviteOpen, showModal] = useState(true)
 
   const closeInviteModal = () => {
     showModal(false)
