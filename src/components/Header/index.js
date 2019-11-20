@@ -1,8 +1,11 @@
 import React, { useState } from 'react'
+import classNames from 'classnames'
 import ModalInvite from '../ModalInvite'
+import './index.scss'
 
 const Header = () => {
-  const [isModalInviteOpen, showModal] = useState(true)
+  const [isModalInviteOpen, showModal] = useState(false)
+  const [showNav, toggleNav] = useState(false)
 
   const closeInviteModal = () => {
     showModal(false)
@@ -12,26 +15,26 @@ const Header = () => {
     showModal(true)
   }
 
+  const onToggleNav = () => {
+    toggleNav(!showNav)
+  }
+
   return (
     <div className="Header">
       <nav className="navbar navbar-expand-lg navbar-light bg-light">
-        <button
-          className="navbar-toggler"
-          type="button"
-          data-toggle="collapse"
-          data-target="#navbarSupportedContent"
-          aria-controls="navbarSupportedContent"
-          aria-expanded="false"
-          aria-label="Toggle navigation"
-        >
+        <button className="navbar-toggler" type="button" onClick={onToggleNav}>
           <span className="navbar-toggler-icon"></span>
         </button>
 
-        <div className="collapse navbar-collapse" id="navbarSupportedContent">
+        <div
+          className={classNames('Header__nav', {
+            'Header__nav--expanded': showNav
+          })}
+        >
           <ul className="navbar-nav mr-auto">
             <li className="nav-item active">
               <a className="nav-link" href="0#">
-                Home <span className="sr-only">(current)</span>
+                Home
               </a>
             </li>
             <li className="nav-item">
@@ -40,7 +43,7 @@ const Header = () => {
               </a>
             </li>
             <li className="nav-item">
-              <a className="nav-link disabled" href="0#">
+              <a className="nav-link" href="0#">
                 Сontacts
               </a>
             </li>

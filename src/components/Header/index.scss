@@ -1,0 +1,22 @@
+.Header {
+  &__nav {
+    &--expanded {
+    }
+  }
+}
+
+/* Mobile */
+@media (max-width: 481px) {
+  .Header {
+    .navbar {
+      align-items: flex-start;
+      flex-direction: column;
+    }
+    &__nav {
+      display: none;
+      &--expanded {
+        display: block;
+      }
+    }
+  }
+}
