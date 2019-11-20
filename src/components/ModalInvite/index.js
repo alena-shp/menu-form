@@ -5,7 +5,7 @@ import { ReactComponent as Search } from '../../assets/Search.svg'
 import ButtonSelect from '../ButtonSelect'
 import Button from '../Button'
 
-const ModalInvite = () => (
+const ModalInvite = props => (
   <Modal isOpen title="Invite people to project">
     <form className="ModalSearch">
       <a href="0#" className="ModalSearch__icon">
@@ -17,7 +17,7 @@ const ModalInvite = () => (
         placeholder="Name or email"
       />
       <ButtonSelect />
-      <Button />
+      <Button typePrimary>Invite 1 person</Button>
     </form>
     <div className="Invitation">
       {[1, 2, 3, 4, 5].map((component, index) => (
@@ -30,7 +30,7 @@ const ModalInvite = () => (
             <a href="0#">hello@milangladis.com</a>
           </div>
           <p className="Invitation__block-activity">Spent 3h 34mins</p>
-          <button>Transfer ownership</button>
+          <Button className="Invitation__block-button" typeSecondary>Transfer ownership</Button>
         </div>
       ))}
     </div>
@@ -41,7 +41,7 @@ const ModalInvite = () => (
       </span>
       <div className="ModalFooter__action">
         <ButtonSelect />
-        <button>Copy link</button>
+        <Button className="ModalFooter__action-button" typePrimary>Copy link</Button>
       </div>
     </div>
   </Modal>

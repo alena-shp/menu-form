@@ -1,10 +1,5 @@
-button {
-  background: linear-gradient(
-      0deg,
-      rgba(45, 156, 219, 0.56),
-      rgba(45, 156, 219, 0.56)
-    ),
-    #ad78c9;
+.button--primary {
+  background: #658cd3;
   border: 0;
   border-radius: 2.81458px;
   color: #ffffff;
@@ -15,4 +10,18 @@ button {
   outline: none;
   text-align: center;
   width: 160px;
+}
+
+.button--secondary {
+  background: transparent;
+  border: 1px solid #dbdbdb;
+  border-radius: 3px;
+  box-sizing: border-box;
+  color: #757575;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 12px;
+  height: 30px;
+  outline: none;
+  text-align: center;
+  width: 130px;
 }

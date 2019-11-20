@@ -32,43 +32,6 @@
     left: 15px;
   }
 }
-.ModalFooter {
-  align-items: center;
-  background: #fafafa;
-  border-radius: 0 0 8px 8px;
-  display: flex;
-  justify-content: space-between;
-  padding: 0;
-  padding-top: 30px;
-
-  &__footer-link {
-    color: #000000;
-    font-family: 'Open Sans', sans-serif;
-    font-size: 13px;
-  }
-  &__footer-action {
-    display: flex;
-    flex-direction: row;
-    height: 45px;
-  }
-  button {
-    background: linear-gradient(
-        0deg,
-        rgba(45, 156, 219, 0.56),
-        rgba(45, 156, 219, 0.56)
-      ),
-      #ad78c9;
-    border: 0;
-    border-radius: 2.81458px;
-    color: #ffffff;
-    font-family: 'Open Sans', sans-serif;
-    font-weight: 600;
-    font-size: 13px;
-    outline: none;
-    text-align: center;
-    width: 160px;
-  }
-}
 
 .Invitation {
   display: flex;
@@ -86,11 +49,6 @@
 
     &:not(:first-child) {
       margin-top: 22px;
-    }
-    button {
-      width: 130px;
-      height: 30px;
-      margin-right: 20px;
     }
   }
 
@@ -123,6 +81,10 @@
     margin-bottom: 0;
     margin-right: 20px;
   }
+
+  &__block-button {
+    margin-right: 20px;
+  }
 }
 ::-webkit-scrollbar {
   border-radius: 3px;
@@ -133,4 +95,34 @@
   background: #d9d9d9;
   border-radius: 3px;
   width: 5px;
+}
+
+.ModalFooter {
+  align-items: center;
+  background: #fafafa;
+  border-radius: 0 0 8px 8px;
+  display: flex;
+  justify-content: space-between;
+  padding: 0;
+  padding-top: 30px;
+
+  &__footer-link {
+    color: #000000;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 13px;
+  }
+  &__footer-action {
+    display: flex;
+    flex-direction: row;
+    height: 45px;
+  }
+
+  &__action-button {
+    background: linear-gradient(
+        0deg,
+        rgba(45, 156, 219, 0.56),
+        rgba(45, 156, 219, 0.56)
+      ),
+      #ad78c9;
+  }
 }
