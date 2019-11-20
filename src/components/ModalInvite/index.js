@@ -4,6 +4,7 @@ import './index.scss'
 import { ReactComponent as Search } from '../../assets/Search.svg'
 import ButtonSelect from '../ButtonSelect'
 import Button from '../Button'
+import Invitation from './Invitation'
 
 const ModalInvite = props => (
   <Modal isOpen title="Invite people to project">
@@ -19,21 +20,8 @@ const ModalInvite = props => (
       <ButtonSelect />
       <Button typePrimary>Invite 1 person</Button>
     </form>
-    <div className="Invitation">
-      {[1, 2, 3, 4, 5].map((component, index) => (
-        <div className="Invitation__block" key={index}>
-          <div className="Invitation__block-photo">
-            <img src="https://picsum.photos/30/30" alt="" />
-          </div>
-          <div className="Invitation__block-information">
-            <p>Name</p>
-            <a href="0#">hello@milangladis.com</a>
-          </div>
-          <p className="Invitation__block-activity">Spent 3h 34mins</p>
-          <Button className="Invitation__block-button" typeSecondary>Transfer ownership</Button>
-        </div>
-      ))}
-    </div>
+   
+   <Invitation />
 
     <div className="ModalFooter">
       <span className="ModalFooter__link">
@@ -41,7 +29,9 @@ const ModalInvite = props => (
       </span>
       <div className="ModalFooter__action">
         <ButtonSelect />
-        <Button className="ModalFooter__action-button" typePrimary>Copy link</Button>
+        <Button className="ModalFooter__action-button" typePrimary>
+          Copy link
+        </Button>
       </div>
     </div>
   </Modal>
