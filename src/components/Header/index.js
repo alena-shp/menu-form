@@ -7,11 +7,13 @@ const Header = () => {
   const [isModalInviteOpen, showModal] = useState(false)
   const [showNav, toggleNav] = useState(false)
 
-  const closeInviteModal = () => {
+  const closeInviteModal = e => {
+    e.preventDefault()
     showModal(false)
   }
 
-  const openInviteModal = () => {
+  const openInviteModal = e => {
+    e.preventDefault()
     showModal(true)
   }
 
