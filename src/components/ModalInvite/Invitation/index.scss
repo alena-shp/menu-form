@@ -1,0 +1,84 @@
+.Invitation {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  height: 154px;
+  margin: 30px 50px 30px 50px;
+  overflow-y: auto;
+
+  &__block {
+    align-items: center;
+    flex-direction: row;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+
+    &:not(:first-child) {
+      margin-top: 22px;
+    }
+  }
+
+  &__user {
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+  }
+
+  &__block-photo {
+    border-radius: 3px;
+    margin-right: 10px;
+
+    img {
+      border-radius: 3px;
+    }
+  }
+
+  &__block-text {
+    display: flex;
+    flex-direction: column;
+
+    p {
+      color: #666666;
+      font-size: 13px;
+      font-weight: 600;
+      margin: 0;
+    }
+    a {
+      color: #666666;
+      font-size: 13px;
+      margin: 0;
+      text-decoration: none;
+    }
+  }
+
+  &__block-operation {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+  }
+
+  &__block-operation-p {
+    align-self: center;
+    color: #bababa;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 11px;
+    margin-bottom: 0;
+    margin-right: 20px;
+  }
+
+  &__block-operation-button {
+    margin-right: 20px;
+    outline: none;
+  }
+}
+::-webkit-scrollbar {
+  border-radius: 3px;
+  width: 5px;
+  background: #f7f7f7;
+}
+::-webkit-scrollbar-thumb {
+  background: #d9d9d9;
+  border-radius: 3px;
+  width: 5px;
+}
