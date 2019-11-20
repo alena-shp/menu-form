@@ -1,16 +1,10 @@
-import React, { useState } from 'react'
+import React from 'react'
 import PropTypes from 'prop-types'
 import ReactModal from 'react-modal'
 import './index.scss'
 import Close from './../../assets/Close.svg'
 
-const Modal = ({ children, title }) => {
-  const [isOpen, showModal] = useState(true)
-
-  const closeModal = () => {
-    showModal(false)
-  }
-
+const Modal = ({ children, title, isOpen, closeModal }) => {
   return (
     <ReactModal
       ariaHideApp={false}

@@ -1,28 +1,53 @@
-import React from 'react'
+import React, { useState } from 'react'
 import ModalInvite from '../ModalInvite'
 
 const Header = () => {
+  const [isModalInviteOpen, showModal] = useState(false)
+
+  const closeInviteModal = () => {
+    showModal(false)
+  }
+
+  const openInviteModal = () => {
+    showModal(true)
+  }
+
   return (
     <div className="Header">
-      <ul className="nav">
-        <li className="nav-item">
-          <a className="nav-link active" href="#0">
-            About
-          </a>
-        </li>
-        <li className="nav-item">
-          <a className="nav-link" href="#0">
-            Contacts
-          </a>
-        </li>
-        <li className="nav-item">
-          <a className="nav-link" href="#0">
-            Invite
-          </a>
-        </li>
-      </ul>
+      <nav className="navbar navbar-expand-lg navbar-light bg-light">
+        <button
+          className="navbar-toggler"
+          type="button"
+          data-toggle="collapse"
+          data-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span className="navbar-toggler-icon"></span>
+        </button>
 
-      <ModalInvite />
+        <div className="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul className="navbar-nav mr-auto">
+            <li className="nav-item active">
+              <a className="nav-link" href="0#">
+                Home <span className="sr-only">(current)</span>
+              </a>
+            </li>
+            <li className="nav-item">
+              <a className="nav-link" href="0#" onClick={openInviteModal}>
+                Invite
+              </a>
+            </li>
+            <li className="nav-item">
+              <a className="nav-link disabled" href="0#">
+                Сontacts
+              </a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+      <ModalInvite isOpen={isModalInviteOpen} closeModal={closeInviteModal} />
     </div>
   )
 }

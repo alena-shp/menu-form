@@ -6,9 +6,13 @@ import Button from '../Button'
 import Invitation from './Invitation'
 import SearchForm from '../SearchForm'
 
-const ModalInvite = props => {
+const ModalInvite = ({ isOpen, closeModal }) => {
   return (
-    <Modal isOpen title="Invite people to project">
+    <Modal
+      isOpen={isOpen}
+      closeModal={closeModal}
+      title="Invite people to project"
+    >
       <SearchForm />
       <Invitation />
       <div className="ModalFooter">
