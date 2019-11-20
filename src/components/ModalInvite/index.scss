@@ -1,16 +1,8 @@
-.Modal {
-  display: flex;
-  align-items: center;
-  flex-direction: column;
-}
 .ModalSearch {
   display: flex;
   align-items: center;
   position: relative;
-
-  span {
-    padding: 0 15px;
-  }
+  padding: 0 50px 0 50px;
 
   input {
     background: #ffffff;
@@ -29,7 +21,7 @@
   }
   a {
     position: absolute;
-    left: 15px;
+    left: 65px;
   }
 }
 
@@ -38,7 +30,7 @@
   align-items: center;
   flex-direction: column;
   height: 154px;
-  margin: 28px 0 26px 0;
+  margin: 30px 50px 30px 50px;
   overflow-y: auto;
 
   &__block {
@@ -101,17 +93,18 @@
   align-items: center;
   background: #fafafa;
   border-radius: 0 0 8px 8px;
+  border-top: 1px solid #E3E3E3;
   display: flex;
   justify-content: space-between;
-  padding: 0;
-  padding-top: 30px;
+  padding: 30px 50px 30px 50px;
+  width: 670px;
 
-  &__footer-link {
+  &__link {
     color: #000000;
     font-family: 'Open Sans', sans-serif;
     font-size: 13px;
   }
-  &__footer-action {
+  &__action {
     display: flex;
     flex-direction: row;
     height: 45px;

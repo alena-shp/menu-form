@@ -1,5 +1,6 @@
 import React from 'react'
 import { ReactComponent as ArrowDown } from '../../assets/ArrowDown.svg'
+import './index.scss'
 
 const ButtonSelect = () => (
   <div className="ButtonSelect">
